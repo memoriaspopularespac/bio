@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirigiendo...</title>
+
+    <meta http-equiv="refresh" content="0; url=https://script.google.com/macros/s/AKfycbwmXCniQ90MSG3VGEJPP8JBZTSygxELNLGvAoCXk1N6tw6ir8pC62v_gFUA_rMO_jfpnA/exec">
+
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f9f9f9;
+            color: #555;
+        }
+        .loader {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #3498db;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            animation: spin 1s linear infinite;
+            margin-bottom: 20px;
+        }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+        a { color: #3498db; text-decoration: none; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <div class="loader"></div>
+    <p>Redirigiendo al sitio...</p>
+    <p style="font-size: 0.8em;">Si no carga automáticamente, <a href="https://script.google.com/macros/s/AKfycbwmXCniQ90MSG3VGEJPP8JBZTSygxELNLGvAoCXk1N6tw6ir8pC62v_gFUA_rMO_jfpnA/exec">haz clic aquí</a>.</p>
+
+    <script type="text/javascript">
+        // 2. Redirección por JavaScript (Respaldo de seguridad)
+        var urlDestino = "https://script.google.com/macros/s/AKfycbwmXCniQ90MSG3VGEJPP8JBZTSygxELNLGvAoCXk1N6tw6ir8pC62v_gFUA_rMO_jfpnA/exec";
+        
+        window.onload = function() {
+            window.location.replace(urlDestino);
+        };
+
+        // 3. Intento final tras medio segundo
+        setTimeout(function() {
+            window.location.href = urlDestino;
+        }, 500);
+    </script>
+
+</body>
+</html>
